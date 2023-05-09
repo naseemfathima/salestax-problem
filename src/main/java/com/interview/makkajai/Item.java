@@ -4,57 +4,57 @@ import java.math.BigDecimal;
 
 public class Item {
 
-		private int quantity;
-		private String name;
-	    private BigDecimal price;
-	    private boolean isImported;
-	    private boolean isExempt;
-	    private BigDecimal total;
-	    
-	    public Item(int quantity, String name, BigDecimal price, boolean isImported, boolean isExempt) {
-			super();
-			
-			this.quantity = quantity;
-			this.name = name;
-			this.price = price;
-			this.isImported = isImported;
-			this.isExempt = isExempt;
-		}
-	    
-	    public int getQuantity() {
-			return quantity;
-		}
+	private int quantity;
+	private String name;
+	private BigDecimal price;
+	private boolean isImported;
+	private boolean isExempt;
+	private BigDecimal total;
 
-		public void setQuantity(int quantity) {
-			this.quantity = quantity;
-		}
+	public Item(int quantity, String name, BigDecimal price, boolean isImported, boolean isExempt) {
+		super();
 
-		public String getName() {
-	        return name;
-	    }
+		this.quantity = quantity;
+		this.name = name;
+		this.price = price;
+		this.isImported = isImported;
+		this.isExempt = isExempt;
+	}
 
-	    public BigDecimal getPrice() {
-	        return price;
-	    }
+	public int getQuantity() {
+		return quantity;
+	}
 
-	    public boolean isImported() {
-	        return isImported;
-	    }
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
 
-	    public boolean isExempt() {
-	        return isExempt;
-	    }
+	public String getName() {
+		return name;
+	}
 
-	    public BigDecimal getTotal() {
-	        return total;
-	    }
+	public BigDecimal getPrice() {
+		return price;
+	}
 
-	    public void setTotal(BigDecimal total) {
-	        this.total = total;
-	    }
+	public boolean isImported() {
+		return isImported;
+	}
 
-	    @Override
-	    public String toString() {
-	        return quantity +" "+ name + ": " + total;
-	    }
+	public boolean isExempt() {
+		return isExempt;
+	}
+
+	public BigDecimal getTotal() {
+		return total;
+	}
+
+	public void setTotal(BigDecimal total) {
+		this.total = total;
+	}
+
+	@Override
+	public String toString() {
+		return quantity + " " + name + ": " + total;
+	}
 }
