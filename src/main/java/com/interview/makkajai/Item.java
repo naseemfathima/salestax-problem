@@ -12,8 +12,6 @@ public class Item {
 	private BigDecimal total;
 
 	public Item(int quantity, String name, BigDecimal price, boolean isImported, boolean isExempt) {
-		super();
-
 		this.quantity = quantity;
 		this.name = name;
 		this.price = price;
